@@ -2468,6 +2468,18 @@ body {
   max-width: 58ch;
 }
 
+body.home-lab-page .actions {
+  column-gap: 1.1rem;
+  row-gap: 1.15rem;
+  margin-top: 1.25rem;
+}
+
+body.home-lab-page .proof-links {
+  column-gap: .85rem;
+  row-gap: 1rem;
+  margin-top: 1.1rem;
+}
+
 .lab-command-band {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -2806,6 +2818,39 @@ body.home-lab-page .artifact-card strong {
   margin-top: .15rem;
 }
 
+.evidence-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(15, 23, 42, .72);
+}
+
+.evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 44rem;
+}
+
+.evidence-table caption {
+  padding: 1rem;
+  color: var(--muted);
+  text-align: left;
+  font-weight: 700;
+}
+
+.evidence-table th,
+.evidence-table td {
+  padding: .85rem 1rem;
+  border-top: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.evidence-table thead th {
+  color: var(--cyan);
+  background: rgba(34, 211, 238, .08);
+}
+
 body.home-lab-page .topology-node,
 body.home-lab-page .topology-bus {
   gap: .5rem;
@@ -2869,6 +2914,11 @@ body.home-page .home-lab-highlight-section .evidence-link {
   .home-lab-page h1 {
     max-width: 100%;
     font-size: 2.7rem;
+  }
+
+  body.home-lab-page .actions,
+  body.home-lab-page .proof-links {
+    row-gap: 1rem;
   }
 
   .lab-timeline,
